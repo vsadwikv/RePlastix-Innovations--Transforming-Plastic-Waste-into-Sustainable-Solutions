@@ -1,116 +1,116 @@
-# ♻️ Inventory & Waste Management System (Salesforce)
+# 📦 Inventory & Waste Management System (Salesforce)
 
-A simple Salesforce project built individually to streamline how inventory, orders, and waste are tracked and managed — with smart automation and role-based access for different types of users.
-
----
-
-## 📌 About the Project
-
-This project is a basic but powerful simulation of how a company like **RePlastix Innovations** can use Salesforce to:
-
-- Track **inventory levels**
-- Handle **orders** from customers
-- Record and manage **waste** generated
-- Automate **approval processes**
-- Control **who sees or edits what**
-
-It demonstrates core Salesforce features like:
-
-- Custom objects & relationships
-- Flow Builder automation
-- Role-based data access
-- Approval processes using Apex
+This is a simple Salesforce project made by me to manage inventory, orders, and plastic waste efficiently. It shows how Salesforce can be used to run basic business operations with automation and data security.
 
 ---
 
-## 👨‍💻 Who Made This?
+## 📌 What This Project Does
 
-> 🧑‍💼 This is an **individual project** done by me as part of a virtual internship with Salesforce. It helped me understand Salesforce CRM's data modeling, automation, and security concepts in a real-world scenario.
-
----
-
-## 🚀 Features
-
-- ✅ Inventory Tracking (Stock-In, Stock-Out)
-- ✅ Order Creation & Status Updates
-- ✅ Waste Logging per Order
-- ✅ Automated Restocking Approval via Flows
-- ✅ Access Control with Roles & Profiles
-- ✅ Apex-based Approval Flow for Managers
+- Tracks available stock and products
+- Handles customer orders
+- Records plastic waste collected
+- Sends alerts when stock is low
+- Manages who can view or change data (based on roles)
 
 ---
 
-## 🧱 Tech Stack
+## 👤 Who Made This?
 
-- **Platform:** Salesforce Developer Edition
-- **Tools Used:** Flow Builder, Object Manager, Apex, Validation Rules
-- **Custom Objects:**
-  - `Inventory__c`
-  - `Order__c`
-  - `Waste__c`
-- **Object Relationships:**
-  - Order ⟶ Inventory (Lookup)
-  - Waste ⟶ Order (Lookup)
-- **Automation:**
-  - Flow Builder for Restock Logic
-  - Apex for Approvals
-- **Security:**
-  - Users (Manager, Handler, Collector)
-  - Roles & Profiles to manage visibility and actions
+This is a solo project created by **Sadwik Varma Vemanamandi** during a Salesforce virtual internship. It helped me learn how to use Salesforce for real-life tasks like tracking stock and automating approvals.
 
 ---
 
-## 📚 Project Modules
+## 🧰 Tools & Features Used
 
-### 1️⃣ Data Modeling
+### 🔹 Platform:
 
-Defined custom objects and relationships to simulate inventory operations in a factory environment.
+- Salesforce Developer Edition
 
-### 2️⃣ Data Security
+### 🔹 Main Tools:
 
-Used **Users, Profiles, and Roles** to make sure only the right people see and edit specific data.  
-E.g., Waste Collectors can't access inventory records.
-
-### 3️⃣ Automation
-
-Set up **Flow Builder** to auto-check inventory levels. If stock is low, it creates a restock request and sends it for approval.
-
-### 4️⃣ Approval Process
-
-Created an **Apex-based approval process** where a manager approves restock requests.
+- **Object Manager** – to create custom data types
+- **Flow Builder** – to automate tasks
+- **Apex (code)** – for approval logic
+- **Validation Rules** – to avoid wrong data entries
+- **Profiles, Roles, and Users** – for data security
 
 ---
 
-## 🎥 Demo Video Walkthrough
+## 📦 What’s in the Project?
 
-- Overview of the project
-- Data model setup
-- Flow and automation demo
-- Security logic
-- Sample test cases (Order creation, Restock request, etc.)
+### ✅ Custom Objects:
 
-📌 [Video Link (to be added)]()
+- **Inventory** – stores stock quantity
+- **Order** – tracks product orders
+- **Waste** – records waste from each order
+- **Restock Request** – used when stock is low
+- **Recycling Center** – where waste is processed
+- **Product** – the item being sold or recycled
 
----
+### ✅ Relationships:
 
-## 🧪 Sample Test Cases
-
-| Scenario              | Action Taken        | Result                      |
-| --------------------- | ------------------- | --------------------------- |
-| Creating an Order     | Linked to Inventory | Quantity auto-decreased     |
-| Logging Waste         | Linked to Order     | Waste recorded successfully |
-| Stock below threshold | Triggered Flow      | Restock Request Created     |
-| Manager views request | Approves via Apex   | Status updated to Approved  |
+- Orders are connected to Products
+- Waste is connected to Orders
+- Restock Requests are connected to Products
 
 ---
 
-## 💡 Why This Project Matters
+## 🔄 How Automation Works
 
-Even small businesses need smart systems to manage their work. This project shows how Salesforce:
+- When an order is placed, the stock is reduced automatically
+- If stock goes below a set limit, a restock request is created
+- A manager can approve the restock, and the stock is updated
 
-- Keeps data **organized**
-- Automates **boring tasks**
-- Improves **team collaboration**
-- Controls **who can do what**
+This is done using:
+
+- **Flow**: checks if stock is low
+- **Apex Code**: handles approvals and sends email notifications
 
 ---
+
+## 🔐 Data Security
+
+- Users are created for each role (Manager, Collector, etc.)
+- Profiles control what each user can do (read, edit, delete)
+- Roles decide which records each user can see
+
+This helps keep sensitive data safe and only visible to the right people.
+
+---
+
+## 📝 Key Features
+
+- Track stock in and out
+- Record waste per order
+- Place and manage orders
+- Create and approve restock requests
+- Control who can access what using profiles and roles
+- Avoid wrong data with validation rules
+
+---
+
+## 🎯 Why This Project?
+
+Even small businesses need a system to stay organized. This project shows how Salesforce can:
+
+- Save time by doing things automatically
+- Reduce mistakes with clean data rules
+- Give the right access to the right people
+- Keep everything in one place
+
+---
+
+## 📚 What I Learned
+
+- Creating and connecting custom objects
+- Setting up flows and writing Apex code
+- Applying security through profiles and roles
+- Automating real business processes in Salesforce
+
+---
+
+## 🧑‍💻 Made by:
+
+**Sadwik Varma Vemanamandi**  
+Individual project for internship learning  
+📧 Email: svemanam@gitam.in
